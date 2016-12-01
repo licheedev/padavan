@@ -3,9 +3,11 @@ padavan汉化文件
 
 提供部分型号固件下载，仅供测试，下载地址如下
 
- 链接: http://pan.baidu.com/s/1o8jLp9o 密码: 4y9d
+ 链接:https://pan.baidu.com/s/1nvNfDIL 密码:h8dn
 
 - 联想newifi mini(NEWIFI-MINI)
+
+- 联想newifi y1s(NEWIFI-Y1S)
 
 - 联想newifi2(NEWIFI-D1)
 
