@@ -42,7 +42,7 @@ https://bitbucket.org/padavan/rt-n56u
 
 1. 机型适配文件位于`padavan/trunk/configs/boards`目录下，每个文件夹对应一个机型，需手动将所需机型适配文件复制到项目对应文件夹下
 
-2. 编辑你的项目trunk目录下的.config，修改对应配置
+2. 编辑你的项目trunk目录下的.config，修改对应配置，或者把`padavan/trunk/configs/templates`下对应机型的config文件复制到trunk目录下重命名为.config
  
  例如：编译newifi d1固件的配置
 
