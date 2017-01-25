@@ -9,7 +9,7 @@ padavan汉化文件
 
 - 联想newifi y1s(NEWIFI-Y1S)
 
-- 联想newifi2(NEWIFI-D1)
+- 联想newifi 2(NEWIFI-D1)
 
 ##一、padavan项目地址
 https://bitbucket.org/padavan/rt-n56u
