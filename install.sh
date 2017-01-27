@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # DESTDIR is your target project's dir
-DESTDIR=~/bitbucket/rt-n56u
+DESTDIR=/home/ano/eworkspace/router/rt-n56u
 
 ROOTDIR=`pwd`
 
@@ -14,6 +14,10 @@ echo "-------------COPY-FILES---------------"
 
 if [ -d "$ROOTDIR/trunk/user/" ] ; then
 	cp -fRv "$ROOTDIR/trunk/user/" "$DESTDIR/trunk/"
+fi
+
+if [ -d "$ROOTDIR/trunk/configs/" ] ; then
+	cp -fRv "$ROOTDIR/trunk/configs/" "$DESTDIR/trunk/"
 fi
 
 echo "-------------COPY-END---------------"
