@@ -11,8 +11,10 @@ padavan汉化文件
 
 - 联想newifi 2(NEWIFI-D1)
 
+- 斐讯k2(PSG1218)
+
 ##一、padavan项目地址
-https://bitbucket.org/padavan/rt-n56u
+https://github.com/andy-padavan/rt-n56u
 
 ##二、文件说明
 
