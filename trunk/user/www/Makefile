@@ -7,7 +7,7 @@ ROMFS_DIR = $(ROOTDIR)/romfs
 include $(ROOTDIR)/user/shared/boards.mk
 
 PROJECT_HOME_URL="https:\/\/github.com\/anoidgit\/padavan\/releases"
-LABEL_COPYRIGHT_TEXT="© 2011-2017 ano, Padavan \& N56U project community"
+LABEL_COPYRIGHT_TEXT="© 2011-2017 ano, Padavan \& ASUS project community"
 
 BOARD_PATTERN=s/ZVMODELVZ/$(CONFIG_FIRMWARE_PRODUCT_ID)/g
 COPYR_PATTERN=s/ZVCOPYRVZ/$(LABEL_COPYRIGHT_TEXT)/g
