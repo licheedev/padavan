@@ -16,11 +16,13 @@ def useO3(fname):
 					tmp = tmp.replace("-O2","-O3")
 					rwt = True
 				cache.append(tmp)
-		cache.append("")
 	except:
 		rwt = False
 	if rwt:
-		print(fname+" edited")
+		print("edit:"+fname)
+		while not cache[-1].strip():
+			del cache[-1]
+		cache.append("")
 		cache = "\n".join(cache).encode("utf-8")
 		with open(fname,"w") as f:
 			f.write(cache)
