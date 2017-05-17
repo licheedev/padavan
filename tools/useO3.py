@@ -19,11 +19,11 @@ def useO3(fname):
 	except:
 		rwt = False
 	if rwt:
-		print("edit:"+fname)
 		while not cache[-1].strip():
 			del cache[-1]
 		cache.append("")
 		cache = "\n".join(cache).encode("utf-8")
+		print("edit:"+fname)
 		with open(fname,"w") as f:
 			f.write(cache)
 	return rwt
