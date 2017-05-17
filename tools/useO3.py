@@ -12,7 +12,7 @@ def useO3(fname):
 				tmp = line.strip("\r\n")
 				tmp = tmp.decode("utf-8")
 				tt = tmp.strip()
-				if tmp.find(" -O2 ")!=-1 or tt.endswith("-O2") or tt.startswith("-O2"):
+				if tmp.find(" -O2 ")!=-1 or tt.endswith("-O2") or tt.endswith("-O2\"") or tt.startswith("-O2") or tmp.find("=-O2")!=-1 or tmp.find("\"-O2")!=-1:
 					tmp = tmp.replace("-O2","-O3")
 					rwt = True
 				cache.append(tmp)
