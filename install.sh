@@ -21,7 +21,7 @@ if [ -d "$ROOTDIR/trunk/configs/" ] ; then
 fi
 
 if [ -d "$ROOTDIR/trunk/libs/libssl/" ] ; then
-	cp -fRv "$ROOTDIR/trunk/libs/libssl/" "$DESTDIR/trunk/"
+	cp -fRv "$ROOTDIR/trunk/libs/libssl/" "$DESTDIR/trunk/libs/"
 fi
 
 echo "-------------COPY-END---------------"
