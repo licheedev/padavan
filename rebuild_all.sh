@@ -8,10 +8,6 @@ mv images/NEWIFI-MINI_*.trx /media/Storage/workspace/router/firmware/
 
 echo "build for newifi y1s"
 cp configs/templates/newifiy1s_mini.config .config
-<<<<<<< HEAD
-=======
-cp -f configs/boards/NEWIFI-MINI/libc.config configs/boards/NEWIFI-Y1S/libc.config
->>>>>>> origin/master
 echo "build GWAN"
 cp configs/boards/NEWIFI-Y1S/Gboard.h configs/boards/NEWIFI-Y1S/board.h
 cp configs/boards/NEWIFI-Y1S/Gkernel-3.4.x.config configs/boards/NEWIFI-Y1S/kernel-3.4.x.config
@@ -33,10 +29,6 @@ mv images/NEWIFI-D1_*.trx /media/Storage/workspace/router/firmware/
 
 echo "build for psg1218"
 cp configs/templates/psg1218_mini.config .config
-<<<<<<< HEAD
-=======
-cp -f configs/boards/NEWIFI-MINI/libc.config configs/boards/PSG1218/libc.config
->>>>>>> origin/master
 ./clear_tree
 ./build_firmware
 mv images/PSG1218_*.trx /media/Storage/workspace/router/firmware/
