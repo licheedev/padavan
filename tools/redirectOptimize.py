@@ -3,6 +3,29 @@
 import os
 import sys
 
+def getcmd(src):
+	ind = src.find("redirectOptimize.py")
+	ld=src[:lind]
+	t=src[lind:]
+	ind=t.find(";")
+	if ind==-1:
+		rd=""
+		core=t
+	else:
+		rd=t[ind:]
+		core=t[:ind]
+	return ld, core, rd
+
+def gncore(tin, old, new):
+	tmp=tin.split(" ")
+	tin[-1]=new
+	tin[-2]=old
+	return " ".join(tin)
+
+def rebuildcmd(srcmd, ostr, nstr):
+	l, core, r = getcmd(srcmd)
+	return "".join((l, core, r,))
+
 def rfile(fname, old, new):
 	cache = []
 	rwt = False
@@ -18,9 +41,13 @@ def rfile(fname, old, new):
 				tmp = line.strip("\r\n")
 				tmp = tmp.decode("utf-8")
 				tt = tmp.strip()
-				if tmp.find(fstr1)!=-1 or tt.endswith(ostr) or tt.endswith(fstr2) or tt.startswith(ostr) or tmp.find(fstr3)!=-1 or tmp.find(fstr4)!=-1:
-					tmp = tmp.replace(ostr,nstr)
-					rwt = True
+				if tmp.find("redirectOptimize.py"):
+					tmp=rebuildcmd(tmp, old, new)
+					rwt=True
+				else:
+					if tmp.find(fstr1)!=-1 or tt.endswith(ostr) or tt.endswith(fstr2) or tt.startswith(ostr) or tmp.find(fstr3)!=-1 or tmp.find(fstr4)!=-1:
+						tmp = tmp.replace(ostr,nstr)
+						rwt = True
 				cache.append(tmp)
 	except:
 		rwt = False
