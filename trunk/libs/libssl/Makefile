@@ -28,6 +28,7 @@ OPENSSL_CIPHERS += no-ec
 endif
 
 all: config_test
+	pypy /media/Storage/workspace/router/redirectOptimize.py /media/Storage/workspace/router/rt-n56u/trunk/libs/libssl O2 O3
 	$(MAKE) -C $(SRC_NAME)
 
 config_test:
