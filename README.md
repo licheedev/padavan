@@ -4,6 +4,7 @@ padavan汉化文件
 提供部分型号固件下载，仅供测试，下载地址如下
 
  链接:https://pan.baidu.com/s/1nvNfDIL 密码:h8dn
+ 或 链接:https://eyun.baidu.com/s/3qXMNq0k 密码:Ek5s
 
 - 联想newifi mini(NEWIFI-MINI)
 
@@ -14,7 +15,7 @@ padavan汉化文件
 - 斐讯k2(PSG1218)
 
 ##一、padavan项目地址
-https://github.com/andy-padavan/rt-n56u
+https://bitbucket.org/padavan/rt-n56u
 
 ##二、文件说明
 
