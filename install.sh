@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # DESTDIR is your target project's dir
-DESTDIR=/home/ano/eworkspace/router/rt-n56u
+DESTDIR=/media/Storage/workspace/router/rt-n56u
 
 ROOTDIR=`pwd`
 
