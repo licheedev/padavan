@@ -20,4 +20,8 @@ if [ -d "$ROOTDIR/trunk/configs/" ] ; then
 	cp -fRv "$ROOTDIR/trunk/configs/" "$DESTDIR/trunk/"
 fi
 
+if [ -d "$ROOTDIR/trunk/libs/libssl/" ] ; then
+	cp -fRv "$ROOTDIR/trunk/libs/libssl/" "$DESTDIR/trunk/"
+fi
+
 echo "-------------COPY-END---------------"
