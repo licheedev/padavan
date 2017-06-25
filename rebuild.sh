@@ -13,5 +13,5 @@ cd ..
 pypy redirectOptimize.py rt-n56u O2 O3
 
 cd rt-n56u/trunk
-./rebuild_all.sh
+bash rebuild_all.sh
 cd ../..
